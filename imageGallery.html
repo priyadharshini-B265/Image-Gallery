@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./imageGallery.css">
+     <!-- swiper js -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+     <!-- google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id = "nav">
+        <nav>
+            <center>
+            <a href="/finalProject.html#myplace">TRIPS</a>
+            <a href="/aboutMe.html">ABOUT</a>
+            <a href="/contact.html">CONTACT</a>
+            </center>
+        </nav>
+    </section>
+    <section id="bg-image">
+        <div class="container">
+        
+            <div class="swiper">
+           
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide">
+                <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iBtO2Rx1HCrQ/v1/1200x-1.jpg" alt="maldives">
+                <h1>Maldives</h1>
+             </div>
+              <div class="swiper-slide">
+                <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Alleppey.jpg" alt="kochin" srcset="">
+                <h1>Kochin</h1>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1196820841_20190903122749.jpg" alt="dubai" srcset="">
+                <h1>Dubai</h1>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://www.visitsingapore.com/singapore-itineraries/best-of-singapore-in-7-days/_jcr_content/par-carousel/carousel_detailpage/carousel/item_1.thumbnail.carousel-img.740.416.jpg" alt="" srcset="">
+                <h1>Singapore</h1>
+              </div>
+
+            
+              
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+           
+            <div class="swiper-scrollbar"></div>
+          </div>
+            </div>
+    </section>
+
+    <center><h1 class="heading">My Travel Diary</h1></center>
+   
+    <section id="myplace1">
+        <div class="img">
+            <img src="./Pictures/China wall.jpg" alt="wall" width="400px" height="250px">
+            <div class="dec">The Great China Wall</div>
+        </div>
+        <div class="img">
+            <img src="./Pictures/Egypt.jpeg" alt="wall" width="400px" height="250px">
+            <div class="dec">Egypt</div>
+        </div>
+        <div class="img">
+           <img src="./Pictures/Taj mahal.jpg" alt="wall" width="400px" height="250px">
+            <div class="dec">Taj Mahal</div>
+        </div>
+   
+    </section>
+    <br>
+    <section id="myplace2">
+        <div class="img">
+           <img src="./Pictures/statue.jpeg" alt="wall" width="400px" height="250px">
+            <div class="dec">Statue</div>
+        </div>
+        <div class="img"
+        ><img src="https://static.toiimg.com/photo/54422629.cms" alt="wall" width="400px" height="250px">
+        <div class="dec">Kochin</div>
+    </div>
+        <div class="img">
+            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/05/Gateway-Of-India_600-1280x720.jpg" alt="wall" width="400px" height="250px">
+            <div class="dec">Mumbai</div>
+        </div>
+    </section>
+    
+    <section id="myplace3">
+            <div class="img">
+                <img src="https://www.planetware.com/photos-large/IND/india-top-attractions-harmandir-sahib.jpg" alt="wall" width="400px" height="250px">
+                <div class="dec">Golden Temple</div>
+            </div>
+            <div class="img">
+               <img src="https://blog.thomascook.in/wp-content/uploads/2018/05/img-7-3-e1526876027464.jpg" alt="wall" width="400px" height="250px">
+                <div class="dec">Lotus Temple</div>
+            </div>
+            <div class="img">
+                <img src="https://www.hyderabadtourism.travel/images/popular/places-near-hyderabad/best-tourist-places-to-visit-near-hyderabad-header.jpg" alt="wall" width="400px" height="250px">
+                <div class="dec">Water Falls</div>
+            </div>
+    </section>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+    autoplay : {
+        delay :3000,
+        disableOnInteraction : false,
+    },
+    loop: true,
+  
+   
+    pagination: {
+      el: '.swiper-pagination',
+      clickable : true,
+    },
+  
+   
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+   
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+    </script>
+    <script src="./imgGallery.js"></script>
+</body>
+</html>

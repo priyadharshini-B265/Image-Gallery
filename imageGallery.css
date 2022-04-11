@@ -1,0 +1,137 @@
+body {
+    background-color: #ccc;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nav {
+    padding: 24px;
+    background-color:rgb(1, 25, 78);
+    width: 100%;
+    height: 30px;
+    word-spacing: 24px;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#myplace1 {
+    padding-left: 140px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+#myplace2 {
+    padding-left: 140px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+#myplace3 {
+    padding-left: 140px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+ 
+
+#bg-image {
+    width: 100%;
+}
+
+div.img {
+    margin: 5px;
+    float: left;
+    cursor: pointer;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+div.dec {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+#para {
+    padding-left: 36px;
+    padding-right: 36px;
+    text-align: center;
+    margin: 60px;
+}
+
+
+.container {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 90%;
+    height:90%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    position: absolute;
+}
+
+.swiper-slide h1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color:gray;
+    padding: 10px;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next {
+    color: white;
+}
+
+
+.swiper .swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+.heading {
+    background-color: #fff;
+    padding: 10px;
+    width: 600px;
+    border-radius: 30px;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  }
